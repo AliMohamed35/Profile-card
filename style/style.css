@@ -1,15 +1,16 @@
 * {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 body {
   background-color: hsl(0, 0%, 8%);
-}
-.container {
+  min-height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 .profile-card {
   background-color: hsl(0, 0%, 12%);
@@ -21,20 +22,22 @@ body {
 .profile-pic {
   border-radius: 50%;
   object-fit: cover;
-  margin-top: 15px;
 }
 .card-info h3 {
   color: hsl(75, 94%, 57%);
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 .card-info p {
   font-size: 17px;
+  margin-bottom: 20px;
 }
 .card-buttons {
   display: flex;
   flex-direction: column;
 }
 .card-buttons button {
-  padding: 20px;
+  padding: 14px;
   border-radius: 10px;
   margin-bottom: 10px;
   background-color: hsl(0, 0%, 20%);
@@ -43,8 +46,8 @@ body {
   font-weight: 900;
   font-size: 15px;
 }
-.card-buttons button:hover{
-    background-color:hsl(75, 94%, 57%) ;
-    color: black;
+.card-buttons button:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: black;
 }
 /****************responsive******************/
